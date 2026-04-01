@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===== META & TITLE ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Landoni Lab</title>
+    
+    <!-- ===== SEO META TAGS ===== -->
+    <meta name="description" content="Landoni Lab — Research group at UNIL specializing in mitochondria, metabolism, ageing, and advanced microscopy. Exploring the dynamic orchestration between mitochondria and metabolism underlying health, disease and ageing.">
+    <meta name="keywords" content="Landoni Lab, mitochondria, metabolism, ageing, aging, microscopy, mtDNA, mitochondrial dynamics, cell biology, UNIL, research group">
+    <meta name="author" content="Landoni Lab">
+    
+    <!-- ===== OPEN GRAPH / SOCIAL SHARING ===== -->
+    <meta property="og:title" content="Landoni Lab">
+    <meta property="og:description" content="Research group at UNIL specializing in mitochondria, metabolism, ageing, and advanced microscopy.">
+    <meta property="og:image" content="https://landonilab.github.io/images/Logo_black.png">
+    <meta property="og:url" content="https://landonilab.github.io/">
+    <meta property="og:type" content="website">
+    
+    <!-- ===== FAVICON ===== -->
+    <!-- Browser tab icon using lab logo -->
+    <link rel="icon" type="image/png" href="images/Logo_black.png">
+    
+    <!-- ===== FONT IMPORTS ===== -->
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- ===== PERFORMANCE OPTIMIZATION ===== -->
+    <!-- Preload background images to improve initial page rendering -->
+    <link rel="preload" as="image" href="images/Triangular.jpg">
+    <link rel="preload" as="image" href="images/Pyramid.jpg">
+    <link rel="preload" as="image" href="images/nmetab.png">
+    <link rel="preload" as="image" href="images/MBL.jpeg">
+    <link rel="preload" as="image" href="images/MAX_worm.jpg">
+    <link rel="preload" as="image" href="images/Green_dynamics_mtStayGold_U2OS__9_MMStack_Pos0_destripped.ome-1.gif">
+
+    <!-- ===== UNIFIED EXTERNAL STYLESHEET ===== -->
+    <!-- All CSS is centralized in styles_JCL.css for consistency across pages -->
+    <link rel="stylesheet" href="styles_JCL.css">
+
+    
+</head>
+<body>
+      <header>
+        <nav id="navbar">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a><img src="icons/close.svg" loading="eager" decoding="async"> </a></li>
+            <li><a href="#science">| SCIENCE</a></li>
+            <li><a href="#publications">| PUBLICATIONS</a></li>
+            <li><a href="#outreach">| OUTREACH</a></li>
+            <li><a href="#team">| TEAM</a></li>
+            <li><a href="news.html">| NEWS</a></li>
+            <!-- <li><a href="LANDONI_CV_2025.pdf">| CV</a></li> -->
+            <!-- <li><a href="#contact">| CONTACT</a></li> -->
+        </ul>
+            <ul>
+            <li><a href="index.html"><img class="lab-logo" src="./icons/SVG/LOGO.svg" alt="Lab Logo" loading="eager" decoding="async">Landoni Lab</a></li>
+                <!-- <li><a href="index.html"><img class="lab-logo" src="./icons/SVG/LOGO.svg" alt="Lab Logo" loading="eager" decoding="async">Landoni Lab</a></li> -->
+            <li class="hideonmobile"><a href="#science">| SCIENCE</a></li>
+            <li class="hideonmobile"><a href="#publications">| PUBLICATIONS</a></li>
+            <li class="hideonmobile"><a href="#outreach">| OUTREACH</a></li>
+            <li class="hideonmobile"><a href="#contact">| CONTACT</a></li>
+            <li class="hideonmobile"><a href="#team">| TEAM</a></li>
+            <!-- <li class="hideonmobile"><a href="news.html">| NEWS</a></li> -->
+            <!-- <li class="hideonmobile"><a href="LANDONI_CV_2025.pdf">| CV</a></li> -->
+            <li class="menu-icon" onclick=showSidebar()><a><img src="icons/menu.svg" alt="Lab Logo" loading="eager" decoding="async"> </a></li>
+        </ul>
+        </nav>
+</header>
+
+<section class="home" id="science" style="--home-bg: url('images/MAX_worm.jpg');">
+    <div class="home-blur-overlay"></div>
+
+    <div class="hero-top">
+        <div class="home-content">
+            <h1 class="lab-name">Landoni Lab</h1>
+            <h2>Mitochondria | Quantitative Imaging | Translational Metabolism | Ageing</h2>
+            <p>Dissecting the dynamic orchestration between mitochondria and metabolism
+            underlying health, disease and ageing using advanced imaging and integrative multi-omics
+            </p>
+
+        </div>
+        <img src="./icons/SVG/LOGO.svg" alt="Landoni Lab Logo" class="hero-lab-logo" loading="eager" decoding="async">
+
+    </div>
+
+    <div class="research-focus">
+            <div>
+                <img src="images/Green_dynamics_mtStayGold_U2OS__9_MMStack_Pos0_destripped.ome-1.gif" alt="Metabolism Image" class="research-image" loading="lazy" decoding="async">
+                <a class="focus-title">
+                    <h3>Mitochondrial & mtDNA dynamics</h3>
+                </a>
+            </div>
+            <div>
+                <img src="images/Muscle.png" alt="Metabolism Image" class="research-image" loading="lazy" decoding="async">
+                <a class="focus-title">
+                    <h3>Spatiotemporal metabolic coordination</h3>
+                </a>
+            </div>
+            <div>
+                <img src="images/nmetab.png" alt="Metabolism Image" class="research-image" loading="lazy" decoding="async">
+                <a class="focus-title">
+                    <h3>Mitochondrial disease & aging</h3>
+                </a>
+            </div>
+    </div>
+
+    <div class="uni-logo-corner">
+        <img src="./icons/SVG/EPFL.svg" alt="EPFL" loading="lazy" decoding="async">
+    </div>
+</section>
+
+<section class="section-header publications-header" id="publications">
+    <div class="bg-titles">
+    <div class="section-title" >
+            <h1 id="publications-section-title">KEY PUBLICATIONS</h1>
+            <!-- <p>Our lab is dedicated to unraveling the complex interactions between mitochondria and cellular metabolism, and how these interactions influence health, disease, and ageing. We employ cutting-edge imaging techniques and integrative multi-omics approaches to gain a comprehensive understanding of these processes.</p> -->
+        
+
+            <div class="simple-publications-links">
+
+                <!-- Google Scholar -->
+                <a href="https://scholar.google.fi/citations?user=xxeYNK8AAAAJ&hl=en" target="_blank" class="simple-contact-item">
+                    <span class="simple-publications-label">| Google Scholar</span>
+                </a>
+
+                <!-- ORCID -->
+                <a href="https://orcid.org/0000-0002-0318-6707" target="_blank" class="simple-contact-item">
+                    <span class="simple-publications-label">| ORCID</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/jclandoni" target="_blank" class="simple-contact-item">
+                    <span class="simple-publications-label">|  GitHub</span>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="publications-content">
+
+    <div class="publications-grid">
+
+        <a href="https://doi.org/10.1101/2024.12.21.629917" target="_blank" class="publication-card">
+            <span class="publication-authors"><b>Landoni, J. C.</b><sup>✉</sup>, Lycas, M., Macuada, J., Jaccard, R., Obara, C., … Manley, S.<sup>✉</sup></span>
+            <span class="publication-authors-short"><b>Landoni, J. C.</b><sup>✉</sup> <i>et al.</i></span>
+            <span class="publication-title">Pearling Drives Mitochondrial DNA Nucleoid Distribution.</span>
+            <span class="publication-journal"><b>Science</b> (2026)</span>
+        </a>
+
+        <a href="https://doi.org/10.64898/2025.12.08.692722" target="_blank" class="publication-card">
+            <span class="publication-authors">Winter, J.*, <b>Landoni, J.C.</b>*, Holt, K., Ben Nejma, S., ... Koslover, E.F., Manley, S.<sup>✉</sup></span>
+            <span class="publication-authors-short">Winter, J.*, <b>Landoni, J.C.</b>* <i>et al.</i></span>
+            <span class="publication-title">Asymmetric mitochondrial trafficking maintains network morphology by balancing perinuclear biogenesis.</span>
+            <span class="publication-journal"><b>BioRxiv</b> (2025)</span>
+        </a>
+
+        <a href="https://doi.org/10.1146/annurev-cellbio-111822-114733" target="_blank" class="publication-card">
+            <span class="publication-authors"><b>Landoni, J. C.</b>*, Kleele, T.*<sup>✉</sup>, Winter, J., Stepp, W., & Manley, S.<sup>✉</sup></span>
+            <span class="publication-authors-short"><b>Landoni, J. C.</b>*, Kleele, T.* <i>et al.</i></span>
+            <span class="publication-title">Mitochondrial Structure, Dynamics, and Physiology: Light Microscopy to Disentangle the Network.</span>
+            <span class="publication-journal"><b>Annual Review of Cell and Developmental Biology</b> (2024)</span>
+        </a>
+
+        <a href="https://doi.org/10.1038/s41467-024-52164-1" target="_blank" class="publication-card">
+            <span class="publication-authors"><b>Landoni, J. C.</b><sup>✉</sup>, Erkul, S., Laalo, T., Goffart, S., Kivelä, R., ... Suomalainen, A.<sup>✉</sup></span>
+            <span class="publication-authors-short"><b>Landoni, J. C.</b><sup>✉</sup> <i>et al.</i></span>
+            <span class="publication-title">Overactive mitochondrial DNA replication disrupts perinatal cardiac maturation.</span>
+            <span class="publication-journal"><b>Nature Communications</b> (2024)</span>
+        </a>
+
+        <a href="https://doi.org/10.1038/s41431-021-00939-1" target="_blank" class="publication-card">
+            <span class="publication-authors">Kuukasjärvi, A.*, <b>Landoni, J. C.</b>*, Kaukonen, J., Juhakoski, M., ... Suomalainen, A.<sup>✉</sup></span>
+            <span class="publication-authors-short">Kuukasjärvi, A.*, <b>Landoni, J. C.</b>* <i>et al.</i></span>
+            <span class="publication-title">IMPDH2: A new gene associated with dominant juvenile-onset dystonia-tremor disorder.</span>
+            <span class="publication-journal"><b>European Journal of Human Genetics</b> (2021)</span>
+        </a>
+
+        <a href="https://doi.org/10.1038/s42255-019-0120-1" target="_blank" class="publication-card">
+            <span class="publication-authors">Hämäläinen, R. H., <b>Landoni, J. C.</b>*, Ahlqvist, K. J.*, Goffart, S., ... Suomalainen, A.<sup>✉</sup></span>
+            <span class="publication-authors-short">Hämäläinen, R. H., <b>Landoni, J. C.</b>* <i>et al.</i></span>
+            <span class="publication-title">MtDNA replication defects challenge nuclear genome stability and provide a unifying mechanism for mouse progerias.</span>
+            <span class="publication-journal"><b>Nature Metabolism</b> (2019)</span>
+        </a>
+
+    </div>
+
+            <div class="more-publications">
+                <a href="https://scholar.google.com/citations?hl=en&user=xxeYNK8AAAAJ&">| Full Publication List</a>
+            </div>
+
+
+</section>
+
+
+<section class="section-header outreach-header" id="outreach">
+    <div class="bg-titles">
+        <div class="section-title" >
+            <h1>OUTREACH & NEWS</h1>
+
+            <div class="simple-publications-links">
+                <a href="#outreach" class="simple-contact-item">
+                    <span class="simple-publications-label">| Outreach</span>
+                </a>
+                <a href="news.html" class="simple-contact-item">
+                    <span class="simple-publications-label">| Lab News</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="outreach-section">
+    <div class="outreach-list">
+        <ul class="outreach-grid">
+
+            <!-- Card 1: MBL Physiology Course -->
+            <li class="outreach-item">
+                <a href="https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/physiology-modern-cell-biology-using-microscopic-biochemical-and-computational-approaches" target="_blank">
+                    <img src="images/MBL.jpeg" alt="MBL Physiology Course" class="outreach-image" loading="lazy" decoding="async">
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">MBL Physiology Course</h3>
+                    </div>
+                </a>
+            </li>
+
+            <!-- Card 2: Swiss Biology Olympiad -->
+            <li class="outreach-item">
+                <a href="https://biology.olympiad.ch/en/" target="_blank">
+                    <img src="images/IBOSwiss.jpeg" alt="Swiss Biology Olympiad" class="outreach-image" loading="lazy" decoding="async">
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">Swiss Biology Olympiad Selective</h3>
+                    </div>
+                </a>
+            </li>
+
+            <!-- Card 3: Ctrl + Z Cellular Reprogramming -->
+            <li class="outreach-item">
+                <a href="https://elgatoylacaja.com/author/jclandoni" target="_blank">
+                    <img src="images/ctrl_z.webp" alt="Ctrl + Z — Cellular Reprogramming" class="outreach-image" loading="lazy" decoding="async">
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">Ctrl + Z — Cellular Reprogramming</h3>
+                    </div>
+                </a>
+            </li>
+
+            <!-- Card 4: Yttrium 39 Periodic Table -->
+            <li class="outreach-item">
+                <a href="https://elgatoylacaja.com/author/jclandoni" target="_blank">
+                    <img src="images/39.webp" alt="Yttrium 39 - Periodic Table" class="outreach-image" loading="lazy" decoding="async">
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">Yttrium 39 - Periodic Table</h3>
+                    </div>
+                </a>
+            </li>
+
+
+            <!-- Card 7: Dato Encerrado Podcast Spotify -->
+            <li class="outreach-item">
+                <a href="https://mitopatients.org/mito-week/" target="_blank">
+                    <img src="images/Dato.png" alt="World Mitochondrial Disease Week" class="outreach-image" loading="lazy" decoding="async">
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">Dato Encerrado Podcast</h3>
+                    </div>
+                </a>
+               <!-- <a href="https://open.spotify.com/episode/79DHvKpMBzsExR1MN94fsN" target="_blank">
+                    <div class="outreach-image">
+                        <iframe src="https://open.spotify.com/embed/episode/79DHvKpMBzsExR1MN94fsN?utm_source=generator&theme=0" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="width:100%;height:100%;border:0;position:relative;top:50%;transform:translateY(-50%);overflow:hidden;pointer-events:none;"></iframe>
+                    </div>
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">Dato Encerrado Podcast</h3>
+                    </div>
+                </a> -->
+            </li>
+            <li class="outreach-item">
+                <a href="https://mitopatients.org/mito-week/" target="_blank">
+                    <img src="images/MitoDisease.jpg" alt="World Mitochondrial Disease Week" class="outreach-image" loading="lazy" decoding="async">
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">World Mitochondrial Disease Week</h3>
+                    </div>
+                </a>
+            </li>
+
+        
+
+    <!-- Card 6: Mitochondrial Musical YouTube -->
+            <li class="outreach-item">
+                <a href="https://www.youtube.com/watch?v=xubDb7w9-zo" target="_blank">
+                    <div class="outreach-image">
+                        <iframe src="https://www.youtube.com/embed/xubDb7w9-zo?si=C29anRvtdqioTS3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:100%;height:100%;border:0;pointer-events:none;"></iframe>
+                    </div>
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">Mitochondrial Musical - GYSS</h3>
+                    </div>
+                </a>
+            </li>
+
+            <!-- Card 8: Ctrl + F Genome Editing -->
+            <li class="outreach-item">
+                <a href="https://elgatoylacaja.com/author/jclandoni" target="_blank">
+                    <img src="images/ctrl_f.webp" alt="Ctrl + F — Genome Editing" class="outreach-image" loading="lazy" decoding="async">
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">Ctrl + F — Genome Editing</h3>
+                    </div>
+                </a>
+            </li>
+
+            
+
+        </ul>
+    </div>  
+
+<!-- <img src="images/Logo_black.png" alt="Metabolism Image" class="logo"> -->
+
+
+</section>
+
+        <div id="contact" class="contact-section">
+
+        <div class="bg-titles-contact">
+                <!-- Section Title -->
+                <h1 class="contact-title">Contact</h2>
+
+            <!-- Contact Links -->
+            <div class="simple-contact-links">
+                <!-- Email -->
+                <a href="mailto:juan.landoni@unil.ch" class="simple-contact-item">
+                    <img src="./icons/SVG/Mail.svg" alt="Email" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">Email</span>
+                </a>
+
+                <!-- Google Scholar -->
+                <a href="https://scholar.google.fi/citations?user=xxeYNK8AAAAJ&hl=en" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Scholar.svg" alt="Google Scholar" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">Google Scholar</span>
+                </a>
+
+                <!-- ORCID -->
+                <a href="https://orcid.org/0000-0002-0318-6707" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Orcid.svg" alt="ORCID" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">ORCID</span>
+                </a>
+
+                <!-- Bluesky -->
+                <a href="https://bsky.app/profile/jclandoni.bsky.social" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Bluesky.svg" alt="Bluesky" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">Bluesky</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/jclandoni" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Linkedin.svg" alt="LinkedIn" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">LinkedIn</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/jclandoni" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Github.svg" alt="GitHub" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">GitHub</span>
+                </a>
+
+                <!-- X (Twitter) -->
+                <a href="https://x.com/jclandoni" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Twitter.svg" alt="X" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">Twitter</span>
+                </a>
+
+                <!-- EPFL -->
+                <a href="https://people.epfl.ch/juan.landoni/?lang=en" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/EPFL.svg" alt="EPFL" class="simple-contact-icon icon-no-filter" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">EPFL</span>
+                </a>
+            </div>
+        </div>
+                </div>
+
+                <footer>
+    <div class="footer">
+        <p>&copy; 2026 Copyright Juan C. Landoni | Design Quentin Kohler. All rights reserved.</p>
+    </div>
+
+
+  <script src="App_q.js"></script>
+
+                </footer>
+
+</body>
+</html>
