@@ -790,6 +790,10 @@ li.outreach-item.link-missing::after {
     display: none;
 }
 
+.hero-lab-logo {
+    display: none;
+}
+
 .bg-titles{
     background-color: var(--alpha-color);
     backdrop-filter: blur(15px) brightness(0.6);
@@ -983,10 +987,60 @@ p{
     height: calc((100vw - 2rem)/2);
 }
 
+/* Always show card title overlay on touch devices (no hover) */
+.outreach-item .outreach-card-content {
+    transform: translateY(0);
+    padding: 0.5rem 0.75rem;
+}
+
+.outreach-title {
+    font-size: clamp(0.65rem, 2.8vw, 0.9rem);
+    line-height: 1.3;
+}
+
+.outreach-list {
+    padding: 0.5rem;
+}
+
+.outreach-grid {
+    margin: 0.5rem;
+    gap: 0.75rem;
+}
 
 .contact-title{
     font-size: 2rem;
 }
+}
+
+/* Single-column outreach on very small screens */
+@media (max-width: 480px) {
+    .outreach-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .outreach-grid li,
+    .outreach-item {
+        height: 56vw;
+    }
+
+    .outreach-grid .outreach-desc {
+        height: 56vw;
+    }
+
+    .outreach-title {
+        font-size: clamp(0.75rem, 3.5vw, 1rem);
+    }
+
+    .outreach-item .outreach-card-content {
+        padding: 0.6rem 1rem;
+    }
+
+    .simple-publications-links {
+        flex-direction: column;
+        gap: 0.4rem;
+        align-items: flex-start;
+    }
 }
 
 /* width */
