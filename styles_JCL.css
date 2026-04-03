@@ -449,10 +449,11 @@ nav li:first-child{
     color: white;
     display: flex;   
     justify-content: left;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     font-size: var(--font-size-body);
     gap: 2rem;
     margin: 1rem;
+    overflow-x: auto;
 }
 
 .simple-publications-label {
@@ -620,6 +621,13 @@ li.outreach-item.link-missing::after {
     color: white;
     list-style: none;
     overflow: hidden;
+    text-align: left;
+}
+
+.outreach-grid .outreach-desc h2,
+.outreach-grid .outreach-desc h3 {
+    text-align: left;
+    padding: 0;
 }
 
 .outreach-grid .outreach-desc h3 {
@@ -819,7 +827,7 @@ h1{
     font-weight: var(--fontWeight);
     color:rgb(255, 255, 255);
     line-height: 1.5;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin: 0;
 }
 
@@ -841,7 +849,15 @@ p{
 
 
 .lab-name{
-    font-size: 2.8rem;
+    font-size: 2rem;
+}
+
+.home-content h2 {
+    font-size: 0.85rem;
+}
+
+.home-content p {
+    font-size: 0.8rem;
 }
 
 .hideonmobile{
@@ -984,7 +1000,8 @@ p{
 }
 
 .outreach-grid .outreach-desc {
-    height: calc((100vw - 2rem)/2);
+    height: auto;
+    overflow: visible;
 }
 
 /* Always show card title overlay on touch devices (no hover) */
@@ -1025,7 +1042,8 @@ p{
     }
 
     .outreach-grid .outreach-desc {
-        height: 56vw;
+        height: auto;
+        overflow: visible;
     }
 
     .outreach-title {
@@ -1037,9 +1055,7 @@ p{
     }
 
     .simple-publications-links {
-        flex-direction: column;
         gap: 0.4rem;
-        align-items: flex-start;
     }
 }
 
