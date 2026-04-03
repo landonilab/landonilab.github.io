@@ -29,13 +29,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
     
     <!-- ===== PERFORMANCE OPTIMIZATION ===== -->
-    <!-- Preload background images to improve initial page rendering -->
-    <link rel="preload" as="image" href="images/Triangular.jpg">
-    <link rel="preload" as="image" href="images/Pyramid.jpg">
-    <link rel="preload" as="image" href="images/nmetab.png">
-    <link rel="preload" as="image" href="images/MBL.jpeg">
-    <link rel="preload" as="image" href="images/MAX_worm.jpg">
+    <!-- Hero background: highest priority, blocks render without it -->
+    <link rel="preload" as="image" href="images/Hero.jpg" fetchpriority="high">
+    <!-- Research carousel images: in-viewport on load -->
     <link rel="preload" as="image" href="images/Green_dynamics_mtStayGold_U2OS__9_MMStack_Pos0_destripped.ome-1.gif">
+    <link rel="preload" as="image" href="images/Muscle.png">
+    <link rel="preload" as="image" href="images/nmetab.jpg">
+    <!-- Below-fold section backgrounds: preload so parallax doesn't flash on scroll -->
+    <link rel="preload" as="image" href="images/Publication2.jpg">
+    <!-- Pearling_POP.jpg is large — not preloaded to avoid blocking hero; browser fetches it on scroll -->
+    <link rel="preload" as="image" href="images/Color_background.jpeg">
 
     <!-- ===== UNIFIED EXTERNAL STYLESHEET ===== -->
     <!-- All CSS is centralized in styles_JCL.css for consistency across pages -->
@@ -49,29 +52,27 @@
         <ul class="sidebar">
             <li onclick=hideSidebar()><a><img src="icons/close.svg" loading="eager" decoding="async"> </a></li>
             <li><a href="#science">| SCIENCE</a></li>
+             <!-- <li><a href="Team.html">| TEAM</a></li> -->
             <li><a href="#publications">| PUBLICATIONS</a></li>
             <li><a href="#outreach">| OUTREACH</a></li>
-            <li><a href="#team">| TEAM</a></li>
-            <li><a href="news.html">| NEWS</a></li>
-            <!-- <li><a href="LANDONI_CV_2025.pdf">| CV</a></li> -->
-            <!-- <li><a href="#contact">| CONTACT</a></li> -->
+            <li><a href="#outreach">| NEWS</a></li>
+            <li><a href="#contact">| CONTACT</a></li>
         </ul>
             <ul>
             <li><a href="index.html"><img class="lab-logo" src="./icons/SVG/LOGO.svg" alt="Lab Logo" loading="eager" decoding="async">Landoni Lab</a></li>
                 <!-- <li><a href="index.html"><img class="lab-logo" src="./icons/SVG/LOGO.svg" alt="Lab Logo" loading="eager" decoding="async">Landoni Lab</a></li> -->
             <li class="hideonmobile"><a href="#science">| SCIENCE</a></li>
+            <!-- <li class="hideonmobile"><a href="Team.html">| TEAM</a></li> -->
             <li class="hideonmobile"><a href="#publications">| PUBLICATIONS</a></li>
             <li class="hideonmobile"><a href="#outreach">| OUTREACH</a></li>
+            <li class="hideonmobile"><a href="#outreach">| NEWS</a></li>
             <li class="hideonmobile"><a href="#contact">| CONTACT</a></li>
-            <li class="hideonmobile"><a href="#team">| TEAM</a></li>
-            <!-- <li class="hideonmobile"><a href="news.html">| NEWS</a></li> -->
-            <!-- <li class="hideonmobile"><a href="LANDONI_CV_2025.pdf">| CV</a></li> -->
             <li class="menu-icon" onclick=showSidebar()><a><img src="icons/menu.svg" alt="Lab Logo" loading="eager" decoding="async"> </a></li>
         </ul>
         </nav>
 </header>
 
-<section class="home" id="science" style="--home-bg: url('images/MAX_worm.jpg');">
+<section class="home" id="science" style="--section-bg: url('images/Hero.jpg');">
     <div class="home-blur-overlay"></div>
 
     <div class="hero-top">
@@ -89,39 +90,43 @@
 
     <div class="research-focus">
             <div>
-                <img src="images/Green_dynamics_mtStayGold_U2OS__9_MMStack_Pos0_destripped.ome-1.gif" alt="Metabolism Image" class="research-image" loading="lazy" decoding="async">
+                <img src="images/Green_dynamics_mtStayGold_U2OS__9_MMStack_Pos0_destripped.ome-1.gif" alt="Metabolism Image" class="research-image" loading="eager" decoding="async">
                 <a class="focus-title">
                     <h3>Mitochondrial & mtDNA dynamics</h3>
                 </a>
             </div>
             <div>
-                <img src="images/Muscle.png" alt="Metabolism Image" class="research-image" loading="lazy" decoding="async">
+                <img src="images/Muscle.png" alt="Metabolism Image" class="research-image" loading="eager" decoding="async">
                 <a class="focus-title">
                     <h3>Spatiotemporal metabolic coordination</h3>
                 </a>
             </div>
             <div>
-                <img src="images/nmetab.png" alt="Metabolism Image" class="research-image" loading="lazy" decoding="async">
+                <img src="images/nmetab.jpg" alt="Metabolism Image" class="research-image" loading="eager" decoding="async">
                 <a class="focus-title">
                     <h3>Mitochondrial disease & aging</h3>
                 </a>
             </div>
     </div>
 
-    <div class="uni-logo-corner">
-        <img src="./icons/SVG/EPFL.svg" alt="EPFL" loading="lazy" decoding="async">
+    <div class="hero-bottom-bar">
+        <!-- <a href="https://bsky.app/profile/jclandoni.bsky.social" target="_blank" aria-label="Bluesky">
+            <img src="./icons/SVG/Bluesky.svg" alt="Bluesky" class="hero-bottom-icon" loading="lazy" decoding="async">
+        </a>
+        <a href="https://orcid.org/0000-0002-0318-6707" target="_blank" aria-label="ORCID">
+            <img src="./icons/SVG/Orcid.svg" alt="ORCID" class="hero-bottom-icon" loading="lazy" decoding="async">
+        </a> -->
+        <a href="https://people.epfl.ch/juan.landoni/?lang=en" target="_blank" aria-label="UNIL">
+            <img src="./icons/SVG/UNIL.svg" alt="UNIL" class="hero-bottom-icon" loading="lazy" decoding="async">
+        </a>
     </div>
 </section>
 
-<section class="section-header publications-header" id="publications">
+<section class="section-header publications-header" id="publications" style="--section-bg: url('images/Publication2.jpg');">
     <div class="bg-titles">
     <div class="section-title" >
             <h1 id="publications-section-title">KEY PUBLICATIONS</h1>
-            <!-- <p>Our lab is dedicated to unraveling the complex interactions between mitochondria and cellular metabolism, and how these interactions influence health, disease, and ageing. We employ cutting-edge imaging techniques and integrative multi-omics approaches to gain a comprehensive understanding of these processes.</p> -->
-        
-
             <div class="simple-publications-links">
-
                 <!-- Google Scholar -->
                 <a href="https://scholar.google.fi/citations?user=xxeYNK8AAAAJ&hl=en" target="_blank" class="simple-contact-item">
                     <span class="simple-publications-label">| Google Scholar</span>
@@ -133,21 +138,20 @@
                 </a>
 
                 <!-- GitHub -->
-                <a href="https://github.com/jclandoni" target="_blank" class="simple-contact-item">
+                <!-- <a href="https://github.com/jclandoni" target="_blank" class="simple-contact-item">
                     <span class="simple-publications-label">|  GitHub</span>
-                </a>
-
+                </a> -->
             </div>
 
         </div>
     </div>
 </section>
 
-<section class="publications-content">
+<section class="publications-content" style="--section-bg: url('images/Publication2.jpg');">
 
     <div class="publications-grid">
 
-        <a href="https://doi.org/10.1101/2024.12.21.629917" target="_blank" class="publication-card">
+        <a href="https://doi.org/10.1126/science.adu5646" target="_blank" class="publication-card">
             <span class="publication-authors"><b>Landoni, J. C.</b><sup>✉</sup>, Lycas, M., Macuada, J., Jaccard, R., Obara, C., … Manley, S.<sup>✉</sup></span>
             <span class="publication-authors-short"><b>Landoni, J. C.</b><sup>✉</sup> <i>et al.</i></span>
             <span class="publication-title">Pearling Drives Mitochondrial DNA Nucleoid Distribution.</span>
@@ -199,29 +203,43 @@
 </section>
 
 
-<section class="section-header outreach-header" id="outreach">
+<section class="section-header outreach-header" id="outreach" style="--section-bg: url('images/Pearling_POP.jpg');">
     <div class="bg-titles">
         <div class="section-title" >
             <h1>OUTREACH & NEWS</h1>
 
             <div class="simple-publications-links">
-                <a href="#outreach" class="simple-contact-item">
+                <a href="Outreach.html" class="simple-contact-item">
                     <span class="simple-publications-label">| Outreach</span>
                 </a>
-                <a href="news.html" class="simple-contact-item">
+                <a href="Outreach.html" class="simple-contact-item">
                     <span class="simple-publications-label">| Lab News</span>
                 </a>
             </div>
 
         </div>
     </div>
+    
 </section>
 
-<section class="outreach-section">
+<section class="outreach-section" style="--section-bg: url('images/Color_background.jpeg');">
     <div class="outreach-list">
         <ul class="outreach-grid">
 
-            <!-- Card 1: MBL Physiology Course -->
+
+          
+            
+            <li class="outreach-item">
+                <a href="https://www.science.org/doi/10.1126/science.adu5646" target="_blank">
+                    <img src="images/Iwasa.png" alt="Pearling Paper" class="outreach-image" loading="lazy" decoding="async">
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">Science: Pearling drives mitochondrial DNA nucleoid distribution</h3>
+                    </div>
+                </a>
+            </li>
+
+
+
             <li class="outreach-item">
                 <a href="https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/physiology-modern-cell-biology-using-microscopic-biochemical-and-computational-approaches" target="_blank">
                     <img src="images/MBL.jpeg" alt="MBL Physiology Course" class="outreach-image" loading="lazy" decoding="async">
@@ -241,6 +259,16 @@
                 </a>
             </li>
 
+            <!-- Card 4: Yttrium 39 Periodic Table -->
+            <li class="outreach-item">
+                <a href="https://elgatoylacaja.com/author/jclandoni" target="_blank">
+                    <img src="images/39.webp" alt="Yttrium 39 - Periodic Table" class="outreach-image" loading="lazy" decoding="async">
+                    <div class="outreach-card-content">
+                        <h3 class="outreach-title">Yttrium 39 - Periodic Table</h3>
+                    </div>
+                </a>
+            </li>
+
             <!-- Card 3: Ctrl + Z Cellular Reprogramming -->
             <li class="outreach-item">
                 <a href="https://elgatoylacaja.com/author/jclandoni" target="_blank">
@@ -251,15 +279,7 @@
                 </a>
             </li>
 
-            <!-- Card 4: Yttrium 39 Periodic Table -->
-            <li class="outreach-item">
-                <a href="https://elgatoylacaja.com/author/jclandoni" target="_blank">
-                    <img src="images/39.webp" alt="Yttrium 39 - Periodic Table" class="outreach-image" loading="lazy" decoding="async">
-                    <div class="outreach-card-content">
-                        <h3 class="outreach-title">Yttrium 39 - Periodic Table</h3>
-                    </div>
-                </a>
-            </li>
+
 
 
             <!-- Card 7: Dato Encerrado Podcast Spotify -->
@@ -279,16 +299,7 @@
                     </div>
                 </a> -->
             </li>
-            <li class="outreach-item">
-                <a href="https://mitopatients.org/mito-week/" target="_blank">
-                    <img src="images/MitoDisease.jpg" alt="World Mitochondrial Disease Week" class="outreach-image" loading="lazy" decoding="async">
-                    <div class="outreach-card-content">
-                        <h3 class="outreach-title">World Mitochondrial Disease Week</h3>
-                    </div>
-                </a>
-            </li>
-
-        
+            
 
     <!-- Card 6: Mitochondrial Musical YouTube -->
             <li class="outreach-item">
@@ -311,18 +322,18 @@
                     </div>
                 </a>
             </li>
-
-            
-
         </ul>
     </div>  
 
 <!-- <img src="images/Logo_black.png" alt="Metabolism Image" class="logo"> -->
 
+            <div class="more-publications">
+                <a href="Outreach.html">| Outreach & News</a>
+            </div>
 
 </section>
 
-        <div id="contact" class="contact-section">
+        <div id="contact" class="contact-section" style="--section-bg: url('images/Color_background.jpeg');">
 
         <div class="bg-titles-contact">
                 <!-- Section Title -->

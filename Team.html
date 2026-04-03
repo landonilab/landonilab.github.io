@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===== META & TITLE ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Landoni Lab — Team</title>
+    
+    <!-- ===== SEO META TAGS ===== -->
+    <meta name="description" content="Meet the Landoni Lab team at UNIL — researchers working on mitochondria, metabolism, ageing, and advanced microscopy.">
+    <meta name="keywords" content="Landoni Lab, team, researchers, mitochondria, metabolism, UNIL">
+    <meta name="author" content="Landoni Lab">
+    
+    <!-- ===== OPEN GRAPH / SOCIAL SHARING ===== -->
+    <meta property="og:title" content="Landoni Lab — Team">
+    <meta property="og:description" content="Meet the Landoni Lab team at UNIL.">
+    <meta property="og:image" content="https://landonilab.github.io/images/Logo_black.png">
+    <meta property="og:url" content="https://landonilab.github.io/team.html">
+    <meta property="og:type" content="website">
+    
+    <!-- ===== FAVICON ===== -->
+    <!-- Browser tab icon using lab logo -->
+    <link rel="icon" type="image/png" href="images/Logo_black.png">
+    
+    <!-- ===== FONT IMPORTS ===== -->
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- ===== PERFORMANCE OPTIMIZATION ===== -->
+    <link rel="preload" as="image" href="images/campus.jpeg">
+    <link rel="preload" as="image" href="images/pdp.jpeg">
+
+    <!-- ===== UNIFIED EXTERNAL STYLESHEET ===== -->
+    <!-- All CSS is centralized in styles_JCL.css for consistency across pages -->
+    <link rel="stylesheet" href="styles_JCL.css">
+
+    
+</head>
+<body>
+      <header>
+        <nav id="navbar">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a><img src="icons/close.svg" loading="eager" decoding="async"> </a></li>
+            <li><a href="index.html#science">| SCIENCE</a></li>
+            <li><a href="team.html">| TEAM</a></li>
+            <li><a href="index.html#publications">| PUBLICATIONS</a></li>
+            <li><a href="index.html#outreach">| OUTREACH</a></li>
+            <li><a href="index.html#outreach">| NEWS</a></li>
+            <li><a href="index.html#contact">| CONTACT</a></li>
+        </ul>
+            <ul>
+            <li><a href="index.html"><img class="lab-logo" src="./icons/SVG/LOGO.svg" alt="Lab Logo" loading="eager" decoding="async">Landoni Lab</a></li>
+            <li class="hideonmobile"><a href="index.html#science">| SCIENCE</a></li>
+            <li class="hideonmobile"><a href="team.html">| TEAM</a></li>
+            <li class="hideonmobile"><a href="index.html#publications">| PUBLICATIONS</a></li>
+            <li class="hideonmobile"><a href="index.html#outreach">| OUTREACH</a></li>
+            <li class="hideonmobile"><a href="index.html#outreach">| NEWS</a></li>
+            <li class="hideonmobile"><a href="index.html#contact">| CONTACT</a></li>
+            <li class="menu-icon" onclick=showSidebar()><a><img src="icons/menu.svg" alt="Menu" loading="eager" decoding="async"> </a></li>
+        </ul>
+        </nav>
+</header>
+
+<!-- ===== TEAM SECTION HEADER ===== -->
+<section class="section-header outreach-header" style="--section-bg: url('images/campus.jpeg');">
+    <div class="bg-titles" style="padding-top: calc(4vh + 40px + 4rem);">
+        <div class="section-title">
+            <h1>TEAM</h1>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TEAM MEMBERS ===== -->
+<section class="publications-content" style="--section-bg: url('images/Color_background.jpeg');">
+    <div style="padding: 3rem 10% 3rem 25%; display: grid; grid-template-columns: 120px 1fr; gap: 3rem 2rem; align-items: start;">
+
+        <!-- Principal Investigator -->
+        <img src="images/pdp.jpeg" alt="Juan C. Landoni" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+        <div>
+            <h3>Juan C. Landoni, Ph.D.</h3>
+            <p>Assistant Professor Investigator</p>
+            <p>🎓 University of Helsinki 🎓 EPFL</p>
+            <p>Chemist turned mitochondria enthusiast, interested in all things science, health and outreach.</p>
+        </div>
+
+        <!-- Team member placeholder
+        <img src="images/MBL.jpg" alt="Open Position" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+        <div>
+            <h3>Open Position</h3>
+            <p>Postdoctoral Researcher</p>
+            <p>We are looking for motivated postdoctoral researchers to join the lab. Get in touch!</p>
+        </div> -->
+
+
+    </div>
+</section>
+
+        <div id="contact" class="contact-section" style="--section-bg: url('images/Color_background.jpeg');">
+
+        <div class="bg-titles-contact">
+                <!-- Section Title -->
+                <h1 class="contact-title">Contact</h2>
+
+            <!-- Contact Links -->
+            <div class="simple-contact-links">
+                <!-- Email -->
+                <a href="mailto:juan.landoni@unil.ch" class="simple-contact-item">
+                    <img src="./icons/SVG/Mail.svg" alt="Email" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">Email</span>
+                </a>
+
+                <!-- Google Scholar -->
+                <a href="https://scholar.google.fi/citations?user=xxeYNK8AAAAJ&hl=en" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Scholar.svg" alt="Google Scholar" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">Google Scholar</span>
+                </a>
+
+                <!-- ORCID -->
+                <a href="https://orcid.org/0000-0002-0318-6707" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Orcid.svg" alt="ORCID" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">ORCID</span>
+                </a>
+
+                <!-- Bluesky -->
+                <a href="https://bsky.app/profile/jclandoni.bsky.social" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Bluesky.svg" alt="Bluesky" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">Bluesky</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/jclandoni" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Linkedin.svg" alt="LinkedIn" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">LinkedIn</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/jclandoni" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Github.svg" alt="GitHub" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">GitHub</span>
+                </a>
+
+                <!-- X (Twitter) -->
+                <a href="https://x.com/jclandoni" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/Twitter.svg" alt="X" class="simple-contact-icon" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">Twitter</span>
+                </a>
+
+                <!-- EPFL -->
+                <a href="https://people.epfl.ch/juan.landoni/?lang=en" target="_blank" class="simple-contact-item">
+                    <img src="./icons/SVG/EPFL.svg" alt="EPFL" class="simple-contact-icon icon-no-filter" loading="lazy" decoding="async">
+                    <span class="simple-contact-label">EPFL</span>
+                </a>
+            </div>
+        </div>
+                </div>
+<footer>
+    <div class="footer">
+        <p>&copy; 2026 Copyright Juan C. Landoni | Design Quentin Kohler. All rights reserved.</p>
+    </div>
+    <script src="App_q.js"></script>
+</footer>
+
+</body>
+</html>
