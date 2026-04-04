@@ -29,14 +29,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
     
     <!-- ===== PERFORMANCE OPTIMIZATION ===== -->
-    <link rel="preload" as="image" href="images/campus.jpeg">
+    <link rel="preload" as="image" href="images/Ski.jpg">
     <link rel="preload" as="image" href="images/pdp.jpeg">
 
     <!-- ===== UNIFIED EXTERNAL STYLESHEET ===== -->
     <!-- All CSS is centralized in styles_JCL.css for consistency across pages -->
     <link rel="stylesheet" href="styles_JCL.css">
 
-    
+    <style>
+      body { background: url('images/Ski.jpg') center / cover fixed no-repeat; }
+    </style>
 </head>
 <body>
       <header>
@@ -64,8 +66,8 @@
 </header>
 
 <!-- ===== TEAM SECTION HEADER ===== -->
-<section class="section-header outreach-header" style="--section-bg: url('images/campus.jpeg');">
-    <div class="bg-titles" style="padding-top: calc(4vh + 40px + 4rem);">
+<section class="section-header outreach-header" style="background: transparent;">
+    <div class="bg-titles" style="padding-top: calc(4vh + 40px + 4rem); backdrop-filter: none; -webkit-backdrop-filter: none; background: transparent;">
         <div class="section-title">
             <h1>TEAM</h1>
         </div>
@@ -73,31 +75,57 @@
 </section>
 
 <!-- ===== TEAM MEMBERS ===== -->
-<section class="publications-content" style="--section-bg: url('images/Color_background.jpeg');">
-    <div style="padding: 3rem 10% 3rem 25%; display: grid; grid-template-columns: 120px 1fr; gap: 3rem 2rem; align-items: start;">
+<section class="publications-content" style="background: transparent;">
+    <div class="team-list">
 
         <!-- Principal Investigator -->
-        <img src="images/pdp.jpeg" alt="Juan C. Landoni" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+        <div class="team-card">
+        <img src="images/pdp.jpeg" alt="Juan C. Landoni" class="team-photo">
         <div>
-            <h3>Juan C. Landoni, Ph.D.</h3>
-            <p>Assistant Professor Investigator</p>
-            <p>🎓 University of Helsinki 🎓 EPFL</p>
-            <p>Chemist turned mitochondria enthusiast, interested in all things science, health and outreach.</p>
+            <p class="team-name">Juan C. Landoni, Ph.D.</p>
+            <p class="team-desc">Assistant Professor</p>
+            <p class="team-desc">🎓 University of Helsinki 🎓 EPFL</p>
+            <p class="team-desc">Chemist turned mitochondria enthusiast, interested in all things science, health and outreach.</p>
+        </div>
         </div>
 
-        <!-- Team member placeholder
-        <img src="images/MBL.jpg" alt="Open Position" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+        <div class="team-card">
+        <img src="images/MBL.jpg" alt="Open Position" class="team-photo">
         <div>
-            <h3>Open Position</h3>
-            <p>Postdoctoral Researcher</p>
-            <p>We are looking for motivated postdoctoral researchers to join the lab. Get in touch!</p>
-        </div> -->
+            <p class="team-name">Open Position</p>
+            <p class="team-desc">Postdoctoral Researcher</p>
+            <p class="team-desc">We are looking for motivated postdoctoral researchers to join the lab. Get in touch!</p>
+        </div>
+        </div>
 
+        <div class="team-card">
+        <img src="images/MBL.jpg" alt="Open Position" class="team-photo">
+        <div>
+            <p class="team-name">Open Position</p>
+            <p class="team-desc">Postdoctoral Researcher</p>
+            <p class="team-desc">We are looking for motivated postdoctoral researchers to join the lab. Get in touch!</p>
+        </div>
+        </div>
+
+
+<!-- SUBTITLE HERE -->
+
+        <p class="team-subtitle">| Alumni &amp; honorable members</p>
+
+
+        <div class="team-card">
+        <img src="images/MBL.jpg" alt="Open Position" class="team-photo">
+        <div>
+            <p class="team-name">Open Position</p>
+            <p class="team-desc">Postdoctoral Researcher</p>
+            <p class="team-desc">We are looking for motivated postdoctoral researchers to join the lab. Get in touch!</p>
+        </div>
+        </div>
 
     </div>
 </section>
 
-        <div id="contact" class="contact-section" style="--section-bg: url('images/Color_background.jpeg');">
+<div id="contact" class="contact-section" style="background: transparent;">
 
         <div class="bg-titles-contact">
                 <!-- Section Title -->

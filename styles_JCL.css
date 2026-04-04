@@ -370,7 +370,7 @@ nav li:first-child{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     width: 100%;
-    padding: 3rem;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
@@ -466,6 +466,71 @@ nav li:first-child{
 
 .simple-publications-label:hover {
     font-weight: 400;
+}
+
+.team-name {
+    font-weight: var(--fontWeight);
+    color: black;
+    font-size: var(--font-size-medium);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.team-desc {
+    font-weight: var(--fontWeight);
+    font-size: var(--font-size-body);
+    color: black;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.team-list {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.team-subtitle {
+    font-weight: var(--fontWeight);
+    color: black;
+    font-size: var(--font-size-medium);
+    line-height: 1.5;
+    margin: 0;
+    padding: 2rem;
+    padding-left: 55%;
+    /* Break out of the 50vw container to span full viewport width */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.team-card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .more-publications{
@@ -785,7 +850,29 @@ li.outreach-item.link-missing::after {
 .outreach-header,
 .outreach-section,
 .contact-section {
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
+    background-position: 30%;
+}
+
+.team-list {
+    width: 90vw;
+}
+
+.team-subtitle {
+    padding-left: 3rem;
+}
+
+.team-card {
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    align-items: start;
+}
+
+.team-card img {
+    align-self: start;
+    width: 80px !important;
+    height: 80px !important;
 }
 
 .home-blur-overlay {
@@ -794,12 +881,14 @@ li.outreach-item.link-missing::after {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.hero-bottom-bar {
+.hero-lab-logo {
     display: none;
 }
 
-.hero-lab-logo {
-    display: none;
+.hero-bottom-bar {
+    padding: 1rem;
+    padding-top: 0rem;
+    gap: 0.75rem;
 }
 
 .bg-titles{
@@ -888,7 +977,7 @@ p{
     width: 100%;
     box-sizing: border-box;
     padding: 0.5rem 20vw 2rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .research-focus::-webkit-scrollbar {
@@ -897,7 +986,7 @@ p{
 
 .research-focus > div {
     scroll-snap-align: center;
-    width: 60vw;
+    width: 70vw;
     flex-shrink: 0;
     height: 100%;
 }
@@ -906,7 +995,7 @@ p{
     position: absolute;
     top: 50%;
     left: 0;
-    padding: 3rem;
+    padding: 0.5rem;
     transform: translateY(-50%);
     text-align: center;
     width: 100%;
