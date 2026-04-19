@@ -256,6 +256,7 @@ nav li:first-child{
     display: flex;
     align-items: center;
     padding: 2rem 15%;
+    padding-top: 4rem;
     gap: 2rem;
 }
 
@@ -864,12 +865,13 @@ li.outreach-item.link-missing::after {
 @media (max-width: 1080px) {
 
 /* background-attachment: fixed causes repaints and is broken on iOS Safari — disable for mobile */
+.home,
 .publications-header,
 .publications-content,
 .outreach-header,
 .outreach-section,
 .contact-section {
-    /* background-attachment: scroll; */
+    background-attachment: scroll;
     background-position: 30%;
 }
 
