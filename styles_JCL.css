@@ -872,7 +872,7 @@ li.outreach-item.link-missing::after {
 .outreach-section,
 .contact-section {
     /* background-attachment: scroll; */
-    background-position: 30%;
+    background-position: 50%;
 }
 
 .team-list {
