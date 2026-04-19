@@ -164,7 +164,7 @@ nav li:first-child{
     right: -250px; /* hidden off-screen */
     height: 100vh;
     width: 250px;
-    backdrop-filter: blur(80px);
+    backdrop-filter: blur(25px);
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
     display: flex; /* keep flex for content */
@@ -871,7 +871,7 @@ li.outreach-item.link-missing::after {
 .outreach-header,
 .outreach-section,
 .contact-section {
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
     background-position: 30%;
 }
 
